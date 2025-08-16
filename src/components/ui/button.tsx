@@ -19,6 +19,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 glow-effect font-semibold",
+        mystical: "bg-gradient-to-r from-game-purple to-game-pink text-white hover:scale-105 glow-magical font-semibold",
+        legendary: "bg-gradient-to-r from-game-gold to-game-orange text-white hover:scale-105 glow-legendary font-semibold",
+        ethereal: "bg-gradient-to-r from-game-cyan to-game-blue text-white hover:scale-105 shadow-lg font-semibold",
         game: "bg-game-blue text-white hover:bg-game-blue/90 hover:scale-105 shadow-lg",
       },
       size: {

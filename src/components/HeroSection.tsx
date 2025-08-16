@@ -27,11 +27,11 @@ export const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="lg" className="text-base">
+          <Button variant="legendary" size="lg" className="text-base">
             Start Exploring
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button variant="outline" size="lg" className="text-base">
+          <Button variant="ethereal" size="lg" className="text-base">
             Browse Characters
           </Button>
         </div>

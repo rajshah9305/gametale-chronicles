@@ -8,51 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Game Encyclopedia Color Palette - Dark Theme */
-    --background: 220 13% 3%;
-    --foreground: 0 0% 95%;
+    /* Fantasy Game Encyclopedia - Mystical Dark Theme */
+    --background: 240 15% 4%;
+    --foreground: 300 20% 92%;
 
-    --card: 220 13% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 240 15% 8%;
+    --card-foreground: 300 20% 92%;
 
-    --popover: 220 13% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 240 15% 8%;
+    --popover-foreground: 300 20% 92%;
 
-    --primary: 30 100% 50%;
-    --primary-foreground: 220 13% 3%;
+    --primary: 285 85% 65%;
+    --primary-foreground: 240 15% 4%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 240 12% 12%;
+    --secondary-foreground: 300 20% 88%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 240 12% 12%;
+    --muted-foreground: 240 8% 65%;
 
-    --accent: 220 100% 68%;
-    --accent-foreground: 220 13% 3%;
+    --accent: 320 75% 70%;
+    --accent-foreground: 240 15% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 15%;
-    --ring: 30 100% 50%;
+    --border: 240 12% 18%;
+    --input: 240 12% 14%;
+    --ring: 285 85% 65%;
 
-    /* Game-specific colors */
-    --game-orange: 30 100% 50%;
-    --game-blue: 220 100% 68%;
-    --game-red: 0 84% 60%;
-    --game-pink: 330 81% 60%;
-    --game-purple: 270 95% 75%;
+    /* Fantasy game colors - mystical palette */
+    --game-orange: 25 95% 60%;
+    --game-blue: 220 90% 70%;
+    --game-red: 0 80% 65%;
+    --game-pink: 320 75% 70%;
+    --game-purple: 285 85% 65%;
+    --game-cyan: 180 85% 65%;
+    --game-gold: 45 95% 70%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(30 100% 50%), hsl(15 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 13% 8%), hsl(220 13% 3%));
-    --gradient-card: linear-gradient(145deg, hsl(220 13% 10%), hsl(220 13% 6%));
+    /* Mystical gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(285 85% 65%), hsl(320 75% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 15% 8%) 0%, hsl(260 20% 6%) 50%, hsl(280 25% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 15% 10%) 0%, hsl(260 18% 8%) 50%, hsl(280 20% 10%) 100%);
+    --gradient-magical: linear-gradient(90deg, hsl(285 85% 65%), hsl(320 75% 70%), hsl(220 90% 70%));
+    --gradient-legendary: linear-gradient(135deg, hsl(45 95% 70%), hsl(25 95% 60%));
     
-    /* Shadows and effects */
-    --shadow-glow: 0 0 40px hsl(30 100% 50% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(220 13% 0% / 0.5);
-    --shadow-intense: 0 20px 60px -10px hsl(30 100% 50% / 0.4);
+    /* Enhanced shadows with magical glow */
+    --shadow-glow: 0 0 40px hsl(285 85% 65% / 0.4);
+    --shadow-card: 0 10px 30px -10px hsl(240 15% 0% / 0.6);
+    --shadow-intense: 0 20px 60px -10px hsl(285 85% 65% / 0.5);
+    --shadow-magical: 0 0 60px hsl(320 75% 70% / 0.3);
+    --shadow-legendary: 0 0 80px hsl(45 95% 70% / 0.4);
 
     --radius: 0.5rem;
 
@@ -74,42 +80,43 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode uses same values as our base theme */
-    --background: 220 13% 3%;
-    --foreground: 0 0% 95%;
+    /* Dark mode - Enhanced mystical theme */
+    --background: 240 15% 4%;
+    --foreground: 300 20% 92%;
 
-    --card: 220 13% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 240 15% 8%;
+    --card-foreground: 300 20% 92%;
 
-    --popover: 220 13% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 240 15% 8%;
+    --popover-foreground: 300 20% 92%;
 
-    --primary: 30 100% 50%;
-    --primary-foreground: 220 13% 3%;
+    --primary: 285 85% 65%;
+    --primary-foreground: 240 15% 4%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 240 12% 12%;
+    --secondary-foreground: 300 20% 88%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 240 12% 12%;
+    --muted-foreground: 240 8% 65%;
 
-    --accent: 220 100% 68%;
-    --accent-foreground: 220 13% 3%;
+    --accent: 320 75% 70%;
+    --accent-foreground: 240 15% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 15%;
-    --ring: 30 100% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 240 12% 18%;
+    --input: 240 12% 14%;
+    --ring: 285 85% 65%;
+    
+    --sidebar-background: 240 15% 6%;
+    --sidebar-foreground: 300 20% 88%;
+    --sidebar-primary: 285 85% 65%;
+    --sidebar-primary-foreground: 240 15% 4%;
+    --sidebar-accent: 240 12% 14%;
+    --sidebar-accent-foreground: 300 20% 88%;
+    --sidebar-border: 240 12% 18%;
+    --sidebar-ring: 285 85% 65%;
   }
 }
 
@@ -136,8 +143,28 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-intense);
   }
 
+  .game-card.legendary {
+    background: var(--gradient-legendary);
+    box-shadow: var(--shadow-legendary);
+    border: 1px solid hsl(var(--game-gold) / 0.5);
+  }
+
+  .game-card.magical {
+    background: var(--gradient-magical);
+    box-shadow: var(--shadow-magical);
+    border: 1px solid hsl(var(--game-purple) / 0.5);
+  }
+
   .glow-effect {
     box-shadow: var(--shadow-glow);
+  }
+
+  .glow-magical {
+    box-shadow: var(--shadow-magical);
+  }
+
+  .glow-legendary {
+    box-shadow: var(--shadow-legendary);
   }
 
   .text-gradient {
@@ -145,5 +172,50 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-magical {
+    background: var(--gradient-magical);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-legendary {
+    background: var(--gradient-legendary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Rarity-specific styles */
+  .rarity-common {
+    @apply text-muted-foreground;
+  }
+
+  .rarity-rare {
+    @apply text-game-blue;
+  }
+
+  .rarity-epic {
+    @apply text-game-purple;
+  }
+
+  .rarity-legendary {
+    @apply text-game-gold;
+  }
+
+  /* Animated effects */
+  .pulse-magical {
+    animation: pulse-magical 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-magical {
+    0% {
+      box-shadow: var(--shadow-glow);
+    }
+    100% {
+      box-shadow: var(--shadow-magical);
+    }
   }
 }
