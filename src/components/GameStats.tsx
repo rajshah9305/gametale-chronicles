@@ -30,24 +30,17 @@ const stats = [
 
 export const GameStats = () => {
   return (
-    <section className="py-16 relative">
+    <section className="py-16">
       <div className="container px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
-            <Card 
-              key={index} 
-              className="game-card text-center group animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardContent className="p-8">
-                <div className="relative inline-block mb-4">
-                  <div className={`absolute inset-0 ${stat.color} opacity-20 blur-xl group-hover:opacity-30 transition-opacity`} />
-                  <stat.icon className={`h-10 w-10 ${stat.color} relative z-10 transition-transform group-hover:scale-110 duration-300`} />
-                </div>
-                <div className={`text-3xl md:text-4xl font-bold mb-2 ${stat.color} transition-all group-hover:scale-105`}>
+            <Card key={index} className="game-card text-center">
+              <CardContent className="p-6">
+                <stat.icon className={`h-8 w-8 ${stat.color} mx-auto mb-3`} />
+                <div className="text-2xl md:text-3xl font-bold mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground font-medium">
+                <div className="text-sm text-muted-foreground">
                   {stat.label}
                 </div>
               </CardContent>

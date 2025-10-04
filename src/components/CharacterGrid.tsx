@@ -65,28 +65,20 @@ const mockCharacters = [
 
 export const CharacterGrid = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial opacity-30" />
-      
-      <div className="container px-4 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Popular <span className="text-gradient">Characters</span>
+    <section className="py-16 bg-secondary/20">
+      <div className="container px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Popular Characters
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Discover the most beloved characters from various gaming universes. Each with unique abilities and captivating backstories.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mockCharacters.map((character, index) => (
-            <div 
-              key={character.id} 
-              className="animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CharacterCard character={character} />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {mockCharacters.map((character) => (
+            <CharacterCard key={character.id} character={character} />
           ))}
         </div>
       </div>

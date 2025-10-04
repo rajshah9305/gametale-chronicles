@@ -5,31 +5,29 @@ import { Star, Zap, Shield, Sword } from "lucide-react";
 
 export const FeaturedCharacter = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial opacity-40" />
-      
-      <div className="container px-4 relative z-10">
-        <div className="text-center mb-12 animate-fade-in">
-          <Badge className="mb-4 glass-effect text-primary border-primary/30 px-4 py-2">
-            ⭐ Character Spotlight
+    <section className="py-16">
+      <div className="container px-4">
+        <div className="text-center mb-12">
+          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+            Character Spotlight
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="text-gradient">Character of the Week</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Featured Character of the Week
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Meet our latest featured character with detailed stats, lore, and gameplay insights.
           </p>
         </div>
         
-        <Card className="game-card max-w-6xl mx-auto overflow-hidden border-primary/30 animate-scale-in">
+        <Card className="game-card max-w-6xl mx-auto overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
-            <div className="relative h-96 md:h-auto group">
+            <div className="relative h-80 md:h-auto">
               <img 
                 src="/lovable-uploads/90fd66d2-42df-425d-97f9-9b7fa044ffce.png" 
                 alt="Featured Character"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/30 to-background/90 md:to-background" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/50 md:to-background/80" />
             </div>
             
             <CardContent className="p-8 flex flex-col justify-center">

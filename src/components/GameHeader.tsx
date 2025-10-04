@@ -4,33 +4,30 @@ import { Input } from "@/components/ui/input";
 
 export const GameHeader = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border glass-effect">
-      <div className="container flex h-20 items-center justify-between px-4">
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="icon" className="md:hidden hover:bg-primary/10">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center justify-between px-4">
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-5 w-5" />
           </Button>
-          <h1 className="text-2xl font-black text-gradient cursor-pointer hover:scale-105 transition-transform">
-            GamePedia
-          </h1>
+          <h1 className="text-xl font-bold text-gradient">GamePedia</h1>
         </div>
         
-        <div className="flex-1 max-w-xl mx-4 hidden md:block">
-          <div className="relative group">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+        <div className="flex-1 max-w-md mx-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input 
               placeholder="Search characters, games, guides..." 
-              className="pl-12 h-12 bg-secondary/50 border-border focus:border-primary/50 transition-colors"
+              className="pl-10 bg-secondary/50 border-border"
             />
           </div>
         </div>
         
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="icon" className="relative hover:bg-primary/10">
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="icon">
             <Bell className="h-5 w-5" />
-            <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full animate-glow-pulse" />
           </Button>
-          <Button variant="legendary" size="sm" className="hidden sm:flex">
+          <Button variant="mystical" size="sm">
             Play Now
           </Button>
         </div>
